@@ -9,9 +9,9 @@ A simple Sokoban styled game...
 ![](gifs/recursion.gif)  
 
 #### What's happening here?
-Okay, there's a lot going on in this gif. It's meant to be one of the later levels in the game after the player has a good understanding of the mechanics, but here is a quick explanation.
-The piston-like objects have an associated weight-pad with them. The one below where the player starts extends the right piston. The one isolated on the left retracts the top piston. Because the weight pad is inaccessible, the top piston is constantly trying to extend, but it can't do so, as there is first a box, and second a piston in the way. Finally, when these two move out of the way, it extends.
-Secondly, there are sentries. These break boxes and players in the direction they are facing.
+Okay, there's a lot going on in this gif. It's meant to be one of the later levels in the game after the player has a good understanding of the mechanics, but here is a quick explanation.  
+The piston-like objects have an associated weight-pad with them. The one below where the player starts extends the right piston. The one isolated on the left retracts the top piston. Because the weight pad is inaccessible, the top piston is constantly trying to extend, but it can't do so, as there is first a box, and second a piston in the way. Finally, when these two move out of the way, it extends.  
+Secondly, there are sentries. These break boxes and players in the direction they are facing.  
 Third, there are teleporters. They are linked by color, and when you go through one, you go through pushing in the same direction you entered it. First, the sentry is pushed through the blue teleporter going up. Second, the box is pushed through the blue teleporter going left, pushing the sentry on the right blue teleporter to the left, where it lands on the teleporter, moving down. Because this is in one step, it does not have time to destroy the box that pushed it. Third, a sentry is pushed up, breaking the box.  
 
 ### And undoing
